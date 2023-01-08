@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/register.css" />
+        <title>Login</title>
+    </head>
+
+    <body>
+        <main>
+            <section class="section-login">
+                <div class="container grid grid--2-cols">
+                    <div class="login-description">
+                        <div class="heading-primary">Sign Up</div>
+                        <form id="register-form" action="#" method="post">
+                            <div class="name">
+                                <input
+                                    id="name"
+                                    placeholder="Enter your Full name"
+                                    type="text"
+                                />
+                            </div>
+                            <div class="email">
+                                <input
+                                    id="email"
+                                    placeholder="Email Address"
+                                    type="email"
+                                />
+                            </div>
+                            <div class="password">
+                                <input
+                                    id="password"
+                                    placeholder="password"
+                                    type="password"
+                                />
+                            </div>
+                            <div class="toggle-login">
+                                <input
+                                    type="radio"
+                                    name="input_passenger"
+                                    id="passenger"
+                                    value="passenger"
+                                />
+                                <label class="radio-label" for="passenger">
+                                    Passenger</label
+                                >
+                            </div>
+                            <div class="toggle-login">
+                                <input
+                                    type="radio"
+                                    name="input_passenger"
+                                    id="driver"
+                                    value="driver"
+                                />
+                                <label class="radio-label" for="driver">
+                                    Driver</label
+                                >
+                            </div>
+                            <div class="vehicle">
+                                <input
+                                    id="vehicle"
+                                    placeholder="vehicle number : AB XX CD XXXX"
+                                    type="text"
+                                />
+                            </div>
+                            <button class="sign-up--btn" type="submit">
+                                Sign Up
+                            </button>
+                        </form>
+                    </div>
+                    <div class="login-image">
+                        <img
+                            src="./assets/register.jpg"
+                            alt="a person registering "
+                        />
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+        <script src="./js/register.js"></script>
+    </body>
+</html>

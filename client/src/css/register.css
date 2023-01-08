@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+}
+.section-login {
+    padding: 6.4rem;
+}
+.container {
+    display: grid;
+    /* max-width: 120rem; */
+    min-height: 60rem;
+    background-image: linear-gradient(to right bottom, #68ace0, #2294ed);
+    box-shadow: 0 4rem 6rem #ddd;
+    padding: 3.2rem;
+}
+
+.grid {
+    display: grid;
+    column-gap: 2.4rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    border: none;
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1rem 2rem;
+    border-radius: 40px;
+    border-bottom: 3px solid transparent;
+    outline: 0;
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+    margin-bottom: 4.8rem;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid green;
+}
+
+input[type="email"]:focus:invalid,
+input[type="password"]:focus:invalid {
+    border-bottom: 3px solid red;
+}
+
+input[type="radio"] {
+    height: 2rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.login-image img {
+    width: 100%;
+}
+
+.heading-primary {
+    font-size: 4.4rem;
+    line-height: 1.05;
+    margin-bottom: 6.4rem;
+    font-weight: 600;
+}
+
+.login-description {
+    padding: 6.4rem 6.4rem 0;
+}
+
+.sign-up--btn {
+    font-family: "poppins", sans-serif;
+    display: block;
+    font-size: 1.5rem;
+    padding: 1.5rem 3.6rem;
+    border-radius: 40px;
+    border: 0;
+    margin: 6.4rem auto 3.2rem;
+    cursor: pointer;
+    background-color: #183b56;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.sign-up--btn:hover {
+    font-weight: 500;
+    background-color: #fff;
+    color: #183b56;
+}
+
+.radio-btn {
+    padding: 0 1.6rem;
+}
+
+.toggle-login {
+    display: inline-block;
+    padding: 1.2rem 2.4rem;
+}
+
+.radio-label {
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.radio-label {
+    font-size: 2.4rem;
+}
+
+#vehicle-number {
+    margin-top: 2.4rem;
+}
+
+.hidden {
+    display: none;
+}

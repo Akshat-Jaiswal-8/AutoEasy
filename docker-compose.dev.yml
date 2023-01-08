@@ -1,0 +1,46 @@
+version: "3.9"
+
+services:
+
+  app:
+    volumes:
+      - ./client:/app:ro
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    command: npm start
+    depends_on:
+      - server
+
+  server:
+    build:
+      context: ./server
+      args:
+        - NODE_ENV=development
+    volumes:
+      - ./server:/app:ro
+      - /app/node_modules
+    env_file:
+      - ./server/.env
+    environment:
+      - NODE_ENV=development
+      - MONGO_USERNAME=arjun
+      - MONGO_PASSWORD=password
+      - MONGO_URI=database
+      - MONGO_PORT=27017
+    depends_on:
+      - database
+    command: npm run dev
+
+  database:
+    container_name: database
+    image: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=arjun
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - ./AppData:/data/db
