@@ -1,12 +1,11 @@
-# E-rikshaw
+# AutoEasy
 
-This is a app that may help you find your travelling vehicle you are comfortable with.
+This AutoEasy app Will save your money as well as time . This app helps you to find the nearest Auto rickshaw / E-Rickshaw near you . 
+You can track the nearest rickshaw which will make your ride easier !
 
 ## Tech stack
 
-- React
 - Mongodb
-- Auth0
 - Node-Express
 
 ## How to run on local machine
@@ -24,3 +23,6 @@ You should have docker desktop and docker engine intalled on your system to run 
 ```bash
 ./run.sh
 ```
+
+
+
