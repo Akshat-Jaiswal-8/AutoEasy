@@ -34,6 +34,6 @@ contactForm.addEventListener("submit", function (e) {
     if (userid) {
         sendData({ userid, sender_name, sender_email, sender_message });
     } else {
-        console.log("login first");
+        alert("login first");
     }
 });
