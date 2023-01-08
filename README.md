@@ -16,6 +16,16 @@ You should have docker desktop and docker engine intalled on your system to run 
   git clone https://github.com/Akshat-Aj-08/AutoEasy.git
 
 ```
+- Install the dependencies 
+
+```bash
+  cd ./server
+  npm intall
+  cd ../client
+  npm install
+  cd ..
+
+```
 - For building the app (if you are running it for the first time on your computer) and running it :-
 
 ```bash
