@@ -1,16 +1,16 @@
 version: "3.9"
 
 services:
-  app:
-    container_name: app
-    image: e-rikshaw
-    build: ./client
-    ports:
-      - "3000:3000"
+    app:
+        container_name: app
+        image: autoeasy
+        build: ./client
+        ports:
+            - "3000:3000"
 
-  server:
-    container_name: backend
-    image: backend
-    build: ./server
-    ports:
-     - "8000:8000"
+    server:
+        container_name: backend
+        image: backend
+        build: ./server
+        ports:
+            - "8000:8000"
