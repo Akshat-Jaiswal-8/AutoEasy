@@ -25,7 +25,7 @@ export const getLocations = async (req, res) => {
     }
 };
 
-// for adding a active user on request
+// for adding an active user on request
 export const addLocation = async (req, res) => {
     try {
         const locParams = req.body;
@@ -166,7 +166,7 @@ export const getWithinField = async (req, res) => {
         if (!locations || locations.length <= 0) {
             res.status(400).json({
                 success: false,
-                reason: "No one acitve",
+                reason: "No one active",
             });
             return;
         }
@@ -197,7 +197,7 @@ export const getWithinField = async (req, res) => {
     }
 };
 
-// for updating the datasebase every 5 min, to remove all the inactive users
+// for updating the database every 5 min, to remove all the inactive users
 export const UpdateActive = async () => {
     try {
         const curDate = new Date();

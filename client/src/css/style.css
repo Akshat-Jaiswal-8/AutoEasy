@@ -102,6 +102,9 @@
 .hero-img {
     width: 100%;
     height: 100%;
+    border-radius: 32px;
+    box-shadow: rgba(151 , 210 , 243 , 100) 0px 5px 15px;
+
 }
 
 .btn-0:link,
@@ -189,7 +192,7 @@
 }
 
 .cta-img-box {
-    background-image: url("../assets/contact-us.jpg");
+    background-image: url("../assets/contact-us.webp");
     background-size: cover;
     background-position: center;
 }

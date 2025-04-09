@@ -78,7 +78,7 @@ export const getDriver = async (req, res) => {
       return;
     }
 
-    if (password != user.password) {
+    if (password !== user.password) {
       res.status(400).json({
         success: false,
         reason: "Invalid credentials",
